@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:400,600,700&display=swap');
+@import './variables';
+
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+}
+
+body {
+    background: #222;
+    background-image: url(images/cool-background.png);
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: auto;
+    background: #fefefe;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.main-header {
+    height: 8em;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    .logo {
+        height: 100%;
+        width: 30%;
+        position: relative;
+        img {
+            height: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
+
+nav.main-nav {
+    ul {
+        li {
+            color: $white-color;
+            display: inline-block;
+            font-size: 1.3em;
+            margin-left: 2em;
+
+            a {
+                color: $white-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.info {
+    height: 2.5em;
+    background: $main-color;
+    @include gradient;
+    p {
+        margin: 0;
+        padding: 0;
+        color: $white-color;
+        font-weight: 500;
+        letter-spacing: .11em;
+        line-height: 2.3em;
+        text-align: center;
+    }
+}
+
+.hero {
+    overflow: hidden;
+    background-image: url(images/photography-of-gray-sports-car-919073.jpg);
+    background-position: 0px center;
+    background-size: cover;
+    padding: 32em 4em 0em;
+    height: 600px;
+    -webkit-box-shadow: 0px 13px 66px 18px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 13px 66px 18px rgba(0,0,0,0.23);
+    box-shadow: 0px 13px 66px 18px rgba(0,0,0,0.23);
+    h1 {
+        color: $white-color;
+        width: 99%;
+        line-height: 1.4em;
+        font-size: 3em;
+        margin: auto;
+    }
+}
+
+.main-content {
+    padding: 0em 4em 2em;
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 1.7em;
+        margin-top: 2.5em;
+        clear: left;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    img {
+        width: 40%;
+        float: left;
+        margin-right: 3em;
+        margin-left: -4em;
+        &.right {
+            float: right;
+            margin-right: -4em;
+            margin-left: 3em;
+        }
+    }
+}
+
+footer {
+    padding: 3em 4em;
+    background: #333;
+    display: flex;
+    color: $white-color;
+    margin-top: 8em;
+    border-top: 3px solid $main-color;
+    .logo {
+        flex-basis: 20%;
+        flex-grow: 0;
+    }
+
+    div.navs {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        nav {
+            margin-left: 8%;
+
+            p {
+                margin: 0;
+                font-weight: 500;
+                margin-bottom: .5em;
+                font-size: 1.1em;
+                letter-spacing: .11em;
+            }
+
+            ul {
+                li {
+                    margin-bottom: .3em;
+
+                    a {
+                        color: #999;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

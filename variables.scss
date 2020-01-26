@@ -1,0 +1,10 @@
+$main-color: #F27125;
+$white-color: #fefefe;
+
+@mixin gradient {
+    background: #f27125; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #f27125 0%, #b7551d 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #f27125 0%,#b7551d 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #f27125 0%,#b7551d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f27125', endColorstr='#b7551d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
+}
